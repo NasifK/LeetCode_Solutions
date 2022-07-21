@@ -6,11 +6,6 @@ def pivotIndex(nums):
     
     index = 1
     while (index < len(nums)):
-        # calculate sum on each side
-        print(nums[:index])
-        print(nums[(index + 1):])
-        print("Left Sum: " + str(sum(nums[:index])))
-        print("Right Sum: " + str(sum(nums[(index + 1):])))
         if (sum(nums[:index]) == sum(nums[(index + 1):])):
             print("Equal")
             return index
